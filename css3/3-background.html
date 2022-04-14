@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>background</title>
+</head>
+<body>
+    <style>
+        body {padding:100px;}
+        div { width:600px; height:600px; border:2px solid red;
+            background:url(img1.png) no-repeat right top, url(img2.png) no-repeat 10px 20px, url(img3.png) repeat-x 30px 50%;
+        }
+        p { width:600px; height:600px; border: 3px solid blue; margin: 30px;
+            background-image: url(img1.png), url(img2.png), url(img3.png);
+            background-repeat: no-repeat, repeat-x, repeat-y;
+            background-position:1px 10px, right 60px, right bottom;
+        }
+    </style>
+    <div>
+    </div>
+    <p></p>
+</body>
+</html>

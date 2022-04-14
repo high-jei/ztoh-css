@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transform origin</title>
+    <style>
+        * {padding:0; margin:0; list-style:none; text-decoration:none;}
+        .tran {position:relative; margin:300px 0 0 500px; width:300px; height:300px; background:#38B0B1; transition:all 2s;
+            /* transform-origin:center; */
+            /* transform-origin:right; */
+            /* transform-origin:top; */
+            /* transform-origin:left top; */
+            /* transform-origin:20% 20%; */
+            transform-origin:100px 120px;
+
+        }
+        .tran:hover {transform:rotate(360deg);}
+        .tran span {position:absolute;
+            /* center */
+            /* left:50%; top:50%;  */
+            
+            /* right */
+            /* left:100%; top:50%; */
+
+            /* top */
+            /* left:50%; top:0%; */
+
+            /* left top */
+            /* left:0%; top:0%; */
+
+            /* 20% 20% */
+            /* left:20%; top:20%; */
+
+            /* 100px 120px */
+            left:100px; top:120px;
+
+            width:10px; height:10px; background:#000; border-radius:100%; transform:translate(-50%, -50%);
+        }
+
+        .a1 {display:block; position:relative; margin:200px 0 0 500px; width:300px; height:100px; border:1px solid #000; font-size:30px; line-height:100px; text-align:center; color:#000; transition:color 0.5s}
+        .a1:hover {color:#fff;}
+        .a1:after,
+        .a1:before {content:""; position:absolute; top:0; width:50%; height:100%; z-index:-1; background:#0f0; transform:scaleX(0); transition:transform .5s;}
+        .a1:after {right:0; transform-origin:right;}
+        .a1:before {left:0; transform-origin:left;}
+        .a1:hover:after,
+        .a1:hover:before {transform:scaleX(1);}
+        .a1:hover:after {transform-origin:left;}
+        .a1:hover:before {transform-origin:right;}
+
+        .a2 {display:block; position:relative; margin:200px 0 0 500px; width:300px; height:100px; border:1px solid black; font-size:30px; line-height:100px; text-align:center; color:lightgray; transition:color .5s}
+        .a2:hover {color:red}
+        .a2:before {content:""; display:inline-block; position:absolute; top:0; left:0; width:300px; height:100%; z-index:-1; background:black; text-align:center; transform:scaleX(0); transition:transform 0.5s;}
+        .a2:hover:before {transform:scaleX(1);}
+    </style>
+</head>
+<body>
+    <!-- <div class="tran"><span></span></div> -->
+
+    <a href="#a" class="a1">button</a>
+
+    <a href="#b" class="a2">custom button</a>
+</body>
+</html>

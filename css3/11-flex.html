@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+</head>
+<body>
+    <style>
+        body {padding:30px;}
+        * {padding:0; margin:0; list-style:none;}
+        
+        /* version css1,2 */
+        /* ul {border:1px solid red; padding:20px;} */
+        /* ul:after {content:""; display:block; clear:both;} */
+        /* li {float:left; width:20%; border:1px solid blue; box-sizing: border-box;} */
+        /* li {float:left; width:33.333%; border:1px solid blue; box-sizing: border-box;} */
+
+        /* version css3 */
+        /* ul {display:flex; border:1px solid red; padding:20px;} */
+        /* li {flex:1; border:1px solid blue;} */
+
+        /* version flex, table */
+        ol, ul {border:1px solid red; padding:20px;}
+        li {border:1px solid blue;}
+        
+        .table {display:table; width:100%; border-collapse:collapse; border-spacing:0;}
+        .table li {display:table-cell; width:20%;}
+
+        /* .flex {display:flex;} */
+        /* .flex li {flex:1;} */
+        
+        .flex {display:flex;}
+        .flex li {flex:1;}
+        .flex li:nth-child(1) {flex:3;}
+        .flex li:nth-child(2) {flex:none; width:50px;}
+
+        .navi {display:flex;}
+        .navi li {flex:1}
+        .navi li:nth-child(1) {flex:none; width:100px;}
+        .navi li:nth-child(2) {flex:1;}
+        .navi li:nth-child(3) {flex:none; width:200px;}
+        
+        div {display:flex; justify-content:center; align-items:center; height:300px; border:1px solid pink;}
+        p {width:200px; height:50px; border:1px solid purple;}
+    </style>
+
+    Table layout
+    <!-- 빨간선과 파란선의 공간이 안보이는 이유
+    <ol> 요소에 제공한 padding속성은 테이블에는 적용이 되지 않아 생기는 현상으로... -->
+    <ol class="table">
+        <li>1123123asdfa</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ol>
+
+    Flex layout
+    <ul class="flex">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    Navi
+    <ul class="navi">
+        <li>Navi
+            <br>menu1
+            <br>menu2
+            <br>menu3
+        </li>
+        <li>contents</li>
+        <li>side</li>
+    </ul>
+
+    sort
+    <div>
+        <p>text</p>
+    </div>
+
+</body>
+</html>

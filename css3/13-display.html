@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display</title>
+</head>
+<body>
+    <style>
+        body {padding:50px;}
+        table {border:1px solid red;}
+        th, td {border:1px solid blue;}
+        ul {border:1px solid red;}
+        li {border:1px solid blue;}
+
+        /* table을 ul,li로 변경하는 경우 */
+        table {display:block;}
+        th, td {display:list-item; list-style:none;}
+
+        /* ul,li를 tr이 존재하지 않는 table로 변경할 경우 */
+        /* ul {display:table; padding:0; margin:0; width:100%; border-collapse:collapse;} */
+        /* li {display:table-cell; padding:0; margin:0; height:100px; vertical-align:middle;} */
+
+        /* ul,li를 tr이 존재하는 table로 변경할 경우 */
+        div {display:table; padding:0; margin:0; width:100%; border-collapse:collapse;}
+        ul {display:table-row;}
+        li {display:table-cell; padding:0; margin:0; height:100px; vertical-align:middle;}
+    </style>
+
+    <!-- table -> ul,li -->
+    <table>
+        <thead>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ul.li -> table,td -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <!-- ul,li -> table,tr,td -->
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

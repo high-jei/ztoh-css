@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selector2</title>
+</head>
+<body>
+    <style>
+        body {padding:20px;}
+        .chk {padding:100px 0;}
+        /* .chk input[type="checkbox"]:checked {margin:30p3355
+                /* .chk input:checked {margin:30px} */
+        .chk input {position:absolute; left:-3000px;}
+        /* .chk input:checked + label {color:blue;} */
+        .chk input + label:before {content:"y"; display:inline-block; width:10px; line-height:10px; border:1px solid grey; vertical-align:middle; line-height:10px; color:transparent;}
+        .chk input:checked + label:before {color:grey;}
+
+        .ra {padding:0 0 100px;}
+        .ra input {position: absolute; left:-3000px;}
+        .ra input + label {display: inline-block; padding:0 0 0 40px; height:38px; background:url(radio0.png) no-repeat; background-size:contain; font-size:20px; line-height:38px;}
+        .ra input:checked + label {background-image:url(radio1.png);}
+    </style>
+    
+    <div class="chk">
+        <input type="checkbox" id="a1"><label for="a1">체크하기1</label>
+        <input type="checkbox" id="a2"><label for="a2">체크하기2y</label>
+    </div>
+
+    <div class="ra">
+        <input type="radio" name="ras" id="b1"><label for="b1">체크하기1</label>
+        <input type="radio" name="ras" id="b2"><label for="b2">체크하기2</label>
+    </div>
+
+    <style>
+        table td:empty {background:grey}
+    </style>
+    <table width="100%" border="1">
+        <thead>
+            <tr>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+                <th>토</th>
+                <th>일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <!-- <td>6</td> -->
+                <!-- <td>7</td> -->
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <!-- <td>20</td> -->
+                <!-- <td>21</td> -->
+                <td>31</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <style>
+        .target div {display:none;}
+        .target div:target {display:block;}
+    </style>
+    <!-- <a href="#contents">본문바로가기</a>
+    <main class="contents"></main> -->
+
+    <div class="target">
+        <a href="#c1">탭1</a>
+        <a href="#c2">탭2</a>
+        <a href="#c3">탭3</a>
+        <div id="c1">탭1내용</div>
+        <div id="c2">탭2내용</div>
+        <div id="c3">탭3내용</div>
+    </div>
+
+    <style>
+        .not span:not(.aaa) {color:red;}
+    </style>
+    <p class="not">
+        <span>a</span>
+        <span class="aaa">b</span>
+        <span>c</span>
+        <span>d</span>
+    </p>
+</body>
+</html>

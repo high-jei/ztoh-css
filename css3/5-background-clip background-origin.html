@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>background-clip background-origin</title>
+</head>
+<body>
+    <style>
+        body {padding:50px;}
+        div {width:300px; height:300px;
+            border:10px solid rgba(0,0,0,0.5);
+            padding:10px;
+            background: url(btn.png) no-repeat pink;
+            background-size:100%;
+            color:#fff;
+            background-origin:content-box;
+            background-clip:content-box;
+        }
+
+        input {padding:0 9px 0 7px; width:150px; height:38px; border:1px solid #9a9a9a; 
+            background:url(img1.png) no-repeat #f5f5f5 right center; background-size:20px; background-origin: content-box;
+            box-sizing:border-box;
+        }
+    </style>
+    
+    <div>text</div>
+
+    <input type="text" name="" id="" value="2022-03-28">
+</body>
+</html>
