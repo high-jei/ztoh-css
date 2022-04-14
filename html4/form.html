@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>로그인</legend>
+            
+             <ul>
+                <li><input type="text" readonly disabled maxlength="4" value="아이디를 입력하세요."> 4자 이하로 입력하세요.</li>
+                <li><input type="password"></li>
+                <li><input type="radio" name="sex" id="">남자 <input type="radio" name="sex" id="">여자</li>
+                <li>
+                    <input type="radio" name="area" id="">서울
+                    <input type="radio" name="area" id="">성남
+                    <input type="radio" name="area" id="">청주
+                   </li>
+                   <li>
+                       <input type="checkbox">피자
+                       <input type="checkbox">족발
+                       <input type="checkbox">짜장면
+                       <input type="checkbox">탕수육
+                       <input type="checkbox">치킨
+                </li>
+                <li><input type="file"></li>
+                <li><input type="image" src="btn.png" alt="button"></li>
+                <li><input type="submit" value="이메일전송"></li>
+                <li><input type="reset" value="취소"></li>
+                <li><input type="button" value="일반버튼"></li>
+                <li><button>버튼</button></li>
+                <li><input type="hidden" name=""></li>
+                <li><textarea name="" id="" cols="30" rows="10">다중편집창</textarea></li>
+                <li>
+                    <select name="" id="" multiple>
+                        <option value="">서울</option>
+                        <option value="">강원도</option>
+                        <option value="">경기도</option>
+                    </select>
+                </li>
+                <li>
+                    <select>
+                        <optgroup label="서울">
+                            <option>잠실</option>
+                            <option>종로</option>
+                            <option>강남</option>
+                        </optgroup>
+                        <optgroup label="청주">
+                            <option>흥덕</option>
+                            <option>가경</option>
+                            <option>내덕</option>
+                        </optgroup>
+                    </select>
+                </li>
+                <li>
+                    <input type="radio" name="ras" id="ra1"><label for="ra1">남</label>
+                    <input type="radio" name="ras" id="ra2"><label for="ra2">여</label>
+                </li>
+                <li>
+                    <label for="phone">핸드폰번호</label>
+                    <select id="phone">
+                        <option value="">010</option>
+                        <option value="">016</option>
+                        <option value="">017</option>
+                        <option value="">018</option>
+                    </select>
+                    -
+                    <input type="text" name="" id="" title="핸드폰번호 두번째 자리 입력">
+                    -
+                    <input type="text" name="" id="" title="핸드폰번호 세번째 자리 입력">
+                </li>
+             </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

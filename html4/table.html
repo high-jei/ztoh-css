@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+</head>
+<body>
+    <table width="100%" border="1" summary="">
+        <caption>웹 표준 교육과정</caption>
+        <colgroup>
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>교육일자</th>
+                <th>수강생</th>
+                <th>지역</th>
+                <th>만족도</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>합계</th>
+                <td>30명</td>
+                <td>-</td>
+                <td>상</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th>2015년 7월 1일</th>
+                <td>20명</td>
+                <td>서울</td>
+                <td>상</td>
+            </tr>
+            <tr>
+                <th>2015년 7월 20일</th>
+                <td>10명</td>
+                <td>수원</td>
+                <td>상</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="1" width="100%">
+        <caption>colsapn</caption>
+        <tr>
+            <td colspan="2">1</td>
+            <!-- <td>2</td> -->
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td colspan="3">10</td>
+            <!-- <td>11</td>
+            <td>12</td> -->
+        </tr>
+    </table>
+
+    <table border="1" width="100%">
+        <caption>rowspan</caption>
+        <tr>
+            <td rowspan=2>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <!-- <td>5</td> -->
+            <td>6</td>
+            <td rowspan="2">7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <!-- <td>11</td> -->
+            <td>12</td>
+        </tr>
+    </table>
+</body>
+</html>
