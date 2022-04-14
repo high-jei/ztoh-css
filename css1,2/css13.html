@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Selector</title>
+    <style>
+        /* 1 */
+        div div {color:red;}
+        /* 2 */
+        div.div {color:red;}
+        /* 3 */
+        div .div {color:blue;}
+        /* 4 */
+        div#div {color:orange;}
+        /* 5 */
+        div #div {color:pink;}
+        /* 6 */
+        div, p {color:red;}
+        /* 7 */
+        div.div p#div {color:red;}
+        /* 8 */
+        div + div {color:gray;}
+        /* 9 */
+        div.a > span {color:red}
+        /* 10 */
+        input[type="text"] {border:1px solid green;}
+        input[type="checkbox"] {margin:30px;}
+        input[name] {margin:10px;}
+        /* 11 */
+        a:hover {color:red;}
+        div:hover {color:yellow;}
+        /* 12 */
+        a:active {color:brown;}
+        /* 13 */
+        a:focus {font-size:20px}
+        /* 14 */
+        div li:first-child {color:blue}
+        div p:first-child {color:green}
+    </style>
+</head>
+<body>
+    <!-- 1 -->
+    <div>
+        test1
+        <div>div-test1</div>
+    </div>
+
+    <!-- 2 -->
+    <div class="div">test2</div>
+    
+    <!-- 3 -->
+    <div>
+        <p class="div">test3</p>
+    </div>
+
+    <!-- 4 -->
+    <div id="div">test4</div>
+
+    <!-- 5 -->
+    <div>
+        <p id="div">test5</p>
+    </div>
+
+    <!-- 6 -->
+    <div>div - test6</div>
+    <p>p - test6</p>
+
+    <!-- 7 -->
+    <div class="div">
+        <p id="div">text7</p>
+    </div>
+    
+    <!-- 8 -->
+    <div>8-1</div>
+    <div>8-2</div>
+    
+    <!-- 9 -->
+    <div class="a">
+        <span>test9-1</span>
+        <div>
+            test9-2
+            <span>test9-3</span>
+        </div>
+    </div>
+    
+    <!-- 10 -->
+    <input type="text"><br>
+    <input type="radio" name="" id=""><br>
+    <input type="checkbox"><br>
+    <input type="password">
+
+    <!-- 11 -->
+    <a href="#a">test11</a>
+    <!-- 12 -->
+    <!-- 13 -->
+    <a href="#a">test13-1</a>
+    <a href="#a">test13-2</a>
+    <a href="#a">test13-3</a>
+    <a href="#a">test13-4</a>
+    <!-- 14 -->
+    <div>
+        <p>test14-00</p>
+        <ul>
+            <li>test14-1</li>
+            <li>test14-2</li>
+            <li>test14-3</li>
+            <li>test14-4</li>
+        </ul>
+    </div>
+</body>
+</html>

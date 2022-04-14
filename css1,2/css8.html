@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Clear</title>
+    <style>
+        /* li { float:left }
+        div { clear:both } */
+
+        .a1 { background: red; border:1px solid blue}
+        .a1 div { float:left; border:1px solid pink;}
+        
+        /* 해결방법1 : 빈요소 추가 */
+        /* .clear { clear:both } */
+
+        /* 해결방법2 : 가상클래스 이용 */
+        .clear:after { content:""; display:block; clear:both; }
+        
+    </style>
+</head>
+<body>
+    <!-- <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <div>test</div>
+    <div>test2</div>
+    <p>1. float 설정시!! 적용된 요소 + 다음 요소까지 float이 적용됨</p> -->
+
+    <div class="a1 clear">
+        <div>1</div>
+        <div>2</div>
+        <!-- <br class="clear"> -->
+    </div>
+    <div>test</div>
+    <div>float을 지정하면 높이가 사라진다!!</div>
+</body>
+</html>

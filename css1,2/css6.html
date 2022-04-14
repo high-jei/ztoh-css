@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Position</title>
+    <style>
+        /* div { position:relative; left:100px; top:100px; width:100px; height:100px; border:1px solid red;} */
+        /* div { position:absolute; left:100px; top:100px; width:100px; height:100px; border:1px solid red;} */
+        /* div { position:absolute; right:100px; bottom:100px; width:100px; height:100px; border:1px solid red;} */
+        /* div { position:fixed; right:100px; bottom:100px; width:100px; height:100px; border:1px solid red;} */
+
+        /* .a { position:relative; left:100px; top:100px; width:500px; height:500px; border:3px solid red;}
+        .b { position:absolute; left:200px; top:50px; width:100px; height:100px; border:1px solid blue;}
+        .c { position:relative; left:50px; top:50px; width:300px; height:300px; border:2px solid gray;} */
+
+        /* div { width:100px; height:100px;}
+        .a { position:absolute; left:50px; top:50px; z-index:2; background:red;}
+        .b { position:absolute; left:80px; top:60px; z-index:3; background:blue;}
+        .c { position:absolute; left:0; top:0; background:gray;} */
+
+    /* position 속성의 3가지 활용 팁 */
+
+        /* 1.가운데 정렬 */
+        /* div { position:absolute; left:50%; top:50%; width:100px; height:100px; border:10px solid red;} */
+        /* div { position:absolute; left:50%; top:50%; margin:-60px 0 0 -60px; width:100px; height:100px; border:10px solid red;} */
+
+        /* 2.margin, relative의 차이 = 위치 이동의 차이 */
+        /* div { margin:-20px 0 0 0; width: 100px; height: 100px; border:1px solid red;} */
+        /* div { position:relative; top:-20px; width: 100px; height: 100px; border:1px solid red;} */
+
+        /* 3.absolute와 absolute의 관계 */
+        .a { position:absolute; left:400px; top:200px; width:400px; height:400px; border:1px solid red;}
+        /* .b { position:relative; left:20px; top:20px; width:300px; height:200px; border:1px solid blue;} */
+        .b { position:absolute; left:20px; top:20px; width:300px; height:200px; border:1px solid blue;}
+        .c { position:absolute; left:10px; top:10px; width:50px; height:50px; border:1px solid gray;}
+        </style>
+</head>
+<body>
+    <!-- text text text text text text text text
+    <div>Position</div>
+    text text text text text text text text -->
+    
+    <!-- <div class="a">
+        <div class="c">
+            <div class="b"></div>
+        </div>
+    </div> -->
+
+    <!-- <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div> -->
+
+    <!-- 1.가운데 정렬 -->
+    <!-- <div>가운데 정렬</div> -->
+
+    <!-- 2.margin, relative의 차이 = 위치 이동의 차이 -->
+    <!-- text text text text text text text text
+    <br><br><br>
+    <div></div>
+    <br><br>
+    text text text text text text text text -->
+
+    <!-- 3.absolute와 absolute의 관계  -->
+    <div class="a">
+        <div class="b">
+            <div class="c"></div>
+        </div>
+    </div>
+</body>
+</html>
